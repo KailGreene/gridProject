@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+nav {
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+}
+.header {
+  height: 15vh;
+  width: 100%;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-content {
+  height: 65vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "section aside"
+    "article aside";
+}
+.footer {
+  height: 10vh;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+}
