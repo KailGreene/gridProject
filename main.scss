@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   text-align: center;
   overflow: hidden;
@@ -22,6 +27,8 @@ nav {
   border: 0.1rem solid black;
 }
 .page {
+  height: 100vh;
+  width: calc(100vw -6em);
   border: 0.1rem solid black;
   display: flex;
   flex-direction: column;
@@ -34,6 +41,18 @@ nav {
   flex-direction: row;
   justify-content: space-around;
 }
+section {
+  grid-area: section;
+  border: 0.1rem solid black;
+}
+article {
+  grid-area: article;
+  border: 0.1rem solid black;
+}
+aside {
+  grid-area: aside;
+  border: 0.1rem solid black;
+}
 .main-content {
   border: 0.1rem solid black;
   height: 65vh;
@@ -43,18 +62,9 @@ nav {
     "section aside"
     "article aside";
 }
-section {
-  border: 0.1rem solid black;
-}
-article {
-  border: 0.1rem solid black;
-}
-aside {
-  border: 0.1rem solid black;
-}
 .footer {
   border: 0.1rem solid black;
-  height: 7.3vh;
+  height: 10vh;
   width: 100%;
 }
 

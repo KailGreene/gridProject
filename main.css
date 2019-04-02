@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   text-align: center;
   overflow: hidden;
@@ -28,6 +35,8 @@ nav {
 }
 
 .page {
+  height: 100vh;
+  width: calc(100vw -6em);
   border: 0.1rem solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +64,28 @@ nav {
       justify-content: space-around;
 }
 
+section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: section;
+  border: 0.1rem solid black;
+}
+
+article {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: article;
+  border: 0.1rem solid black;
+}
+
+aside {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: aside;
+  border: 0.1rem solid black;
+}
+
 .main-content {
   border: 0.1rem solid black;
   height: 65vh;
@@ -64,21 +95,9 @@ nav {
       grid-template-areas: "section aside" "article aside";
 }
 
-section {
-  border: 0.1rem solid black;
-}
-
-article {
-  border: 0.1rem solid black;
-}
-
-aside {
-  border: 0.1rem solid black;
-}
-
 .footer {
   border: 0.1rem solid black;
-  height: 7.3vh;
+  height: 10vh;
   width: 100%;
 }
 
